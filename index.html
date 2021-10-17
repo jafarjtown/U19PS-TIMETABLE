@@ -6,6 +6,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>U19PSXXXX Exam timetable</title>
 	<style>
+		*{
+			font-size: medium;
+			box-sizing: border-box;
+		}
 			.logo {
 				width: 100px;
 				height: auto;
@@ -27,11 +31,20 @@
 			}
 			table{
 				width: 100%;
-				text-transform: uppercase;
-				font-weight: 700;
+			}
+			thead{
+				background-color: lightgrey;
+				font-weight: 600;
+			}
+			tbody{
+				font-size: smaller;
 			}
 			td{
 				padding: 3px;
+				font-size: 10px;
+			}
+			thead td{
+				font-size: medium;
 			}
 			button{
 				padding: 10px 15px;
@@ -42,6 +55,7 @@
 				font-weight: 600;
 				cursor: pointer;
 			}
+
 			@media  screen and (max-device-width: 650px) {
 				.header{
 					display: none;
@@ -71,6 +85,103 @@
 		<img src="logo1.jpg" class="logo" />
 	</div>
 	<table>
+		<thead>
+			<tr>
+				<td>Date</td>
+				<td>Monrning 8:30 - 11:30 am</td>
+				<td>Afternoon 2:30 - 5:30 pm</td>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<span>Thursday</span>
+					<span>21/10/2021</span>
+				</td>
+				<td></td>
+				<td>
+					<b>POLS 104 (150) NLH 1 & 2,</b> *Dr. Lawal Tafida
+					<span>
+						Mal. Rilwan
+Mas’od, Sani Musa, Abiola Corper, 
+					</span>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<span>Friday</span>
+					<span>22/10/2021</span>
+				</td>
+				<td>
+					<b>POLS 102 (300) TETF </b>*Dr. Isah Abbas, Dr. David Moveh,
+						Malama Khadija Sarki,Dr. Akin Lijoka , Sani Musa, Abiola Corper,
+						Ibrahim Khames
+				</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>
+					<span>Saturday</span>
+					<span>23/10/2021</span>
+				</td>
+				<td>
+					<b>Geog 106</b></td>
+				<td><b>Geog 106</b></td>
+			</tr>
+			<tr>
+				<td>
+					<span>Monday</span>
+					<span>25/10/2021</span>
+				</td>
+				<td></td>
+				<td>
+					<b>POLS 110 (300) NLH 1,2,&3.</b>*Dr. Isa Saidu, Mal Yusuf Mahmud,
+						Mal. Lateef Lawal, Usman Muideen, Usman Shehu Sani, Kamal
+						Corper, Shamsudeen Rabiu
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<span>Tuesday</span>
+					<span>26/10/2021</span>
+				</td>
+				<td></td>
+				<td>
+					<b>SOLG 102 (400) TETF</b>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<span>Monday</span>
+					<span>01/11/2021</span>
+				</td>
+				<td>
+					<b>POLS 112 (700) TETF, MPH, NLH 1,2,3, & 4 </b>Dr. Isa Saidu, Dr.
+						Jacob Audu , Mal. Abdul Ahmadu, Malama Fatima Mahmud, Mal.
+						Danladi Aliyu, Mal. Kabiru Rufa’I, Dr. Akin Lijoka, Mal. Lateef
+						Lawal, Usman Muideen, Sani Musa, Ibrahim Khames, Abiola
+						Corper, Kamal Corper
+				</td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>
+					<span>Wednesday</span>
+				<span>03/11/2021</span>
+				</td>
+				<td></td>
+				<td>
+					<b>
+						POLS 108 (150) LT1</b> *Malama Rabiat Momodu, Malama Halima
+Adamu, 
+				
+				</td>
+				
+			</tr>
+		</tbody>
+	</table>
+
+	<!-- <table>
 		<tr>
 			<td>Date</td>
 			
@@ -116,7 +227,7 @@
 		<td>lt1</td>
 		<td>2:30 - 5:30 pm</td>
 	</tr>
-	</table>
+	</table> -->
 	<button>print</button>
 	<script>
 		const btn = document.querySelector('button')
