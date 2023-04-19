@@ -10,6 +10,11 @@
 			font-size: medium;
 			box-sizing: border-box;
 		}
+		body{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
 			.logo {
 				width: 100px;
 				height: auto;
@@ -24,6 +29,7 @@
 				justify-content: center;
 				margin-bottom: 30px;
 				width: fit-content;
+				max-width: 400px;
 			}
 			table,tr,td {
 				border-collapse: collapse;
@@ -31,10 +37,13 @@
 			}
 			table{
 				width: 100%;
+				max-width: 400px;
+				margin: auto;
 			}
 			thead{
 				background-color: lightgrey;
 				font-weight: 600;
+				
 			}
 			tbody{
 				font-size: smaller;
@@ -44,18 +53,28 @@
 				font-size: 10px;
 			}
 			thead td{
-				font-size: medium;
+				font-size: smaller;
 			}
 			button{
-				padding: 10px 15px;
-				margin: 10px 0;
-				background-color: blue;
+				width: 50px;
+				padding: 5px;
+				background-color: rgb(149, 149, 150);
 				border: none;
+				border-radius: 4px;
 				color: white;
-				font-weight: 600;
 				cursor: pointer;
+				font-size: small;
 			}
-
+			td{
+				font-weight: 700;
+			}
+            tr td:first-child{
+				border: none;
+				display: flex;
+				flex-direction: column;
+				font-weight: 400;
+			
+			}
 			@media  screen and (max-device-width: 650px) {
 				.header{
 					display: none;
@@ -65,8 +84,16 @@
 				button{
 					display: none;
 				}
+				body{
+					width: 100%;
+
+				}
+				.header{
+					max-width: 90% !important;
+				}
 				table{
 					height: 500px;
+					max-width: 90% !important;
 				}
 			}
 	</style>
@@ -79,7 +106,7 @@
 				<h2>
 					The Department of Political science & International Studies
 				</h2>
-				<h3 style="background-color: brown;color: white;border-radius: 20px;">100 level Exam Time-table</h3>
+				<h3 style="background-color: brown;color: white;border-radius: 20px;">200 L Exam Time-table</h3>
 			</center>
 		</div>
 		<img src="logo1.jpg" class="logo" />
@@ -88,149 +115,97 @@
 		<thead>
 			<tr>
 				<td>Date</td>
-				<td>Monrning 8:30 - 11:30 am</td>
-				<td>Afternoon 2:30 - 5:30 pm</td>
+				<td>8:30 - 11:30 am</td>
+				<td>2:30 - 5:30 pm</td>
 			</tr>
 		</thead>
 		<tbody>
 			<tr>
 				<td>
-					<span>Thursday</span>
-					<span>21/10/2021</span>
+					<span>Tuessday</span>
+					<span>25/04/2023</span>
 				</td>
 				<td></td>
 				<td>
-					<b>POLS 104 (150) NLH 1 & 2,</b> *Dr. Lawal Tafida
+					POLS 201 TETF, MIAD, LT1, LT2				</td>
+			</tr>
+			<tr>
+				<td>
+					<span>Thursday</span>
+					<span>27/04/2023</span>
+				</td>
+				<td>
 					
-						Mal. Rilwan
-Mas’od, Sani Musa, Abiola Corper, 
-				
+				</td>
+				<td>
+					INTS 201 LT1
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<span>Saturday</span>
+					<span>29/04/2023</span>
+				</td>
+				<td>
+					</td>
+				<td>POLS 207 MPH</td>
+			</tr>
+			<tr>
+				<td>
+					<span>Tuesday</span>
+					<span>02/05/2023</span>
+				</td>
+				<td>
+                    </td>
+				<td>
+					POLS 217 MPH
 				</td>
 			</tr>
 			<tr>
 				<td>
 					<span>Friday</span>
-					<span>22/10/2021</span>
-				</td>
-				<td>
-					<b>POLS 102 (300) TETF </b>*Dr. Isah Abbas, Dr. David Moveh,
-						Malama Khadija Sarki,Dr. Akin Lijoka , Sani Musa, Abiola Corper,
-						Ibrahim Khames
+					<span>05/05/2023</span>
 				</td>
 				<td></td>
+				<td>
+					POLS 221 LT1
+				</td>
 			</tr>
 			<tr>
 				<td>
 					<span>Saturday</span>
-					<span>23/10/2021</span>
+					<span>06/05/2023</span>
 				</td>
 				<td>
-					<b>Geog 106</b></td>
-				<td><b>Geog 106</b></td>
-			</tr>
-			<tr>
-				<td>
-					<span>Monday</span>
-					<span>25/10/2021</span>
+					
 				</td>
 				<td>
-                                <b>MCOM 108 (370) TETF</b>
-                               </td>
-				<td>
-					<b>POLS 110 (300) NLH 1,2,&3.</b>*Dr. Isa Saidu, Mal Yusuf Mahmud,
-						Mal. Lateef Lawal, Usman Muideen, Usman Shehu Sani, Kamal
-						Corper, Shamsudeen Rabiu
+					POLS 219 NLH 1
 				</td>
 			</tr>
 			<tr>
 				<td>
 					<span>Tuesday</span>
-					<span>26/10/2021</span>
+				    <span>10/05/2023</span>
 				</td>
 				<td></td>
 				<td>
-					<b>SOLG 102 (400) TETF</b>
-				</td>
-			</tr>
-			<tr>
-				<td>
-					<span>Monday</span>
-					<span>01/11/2021</span>
-				</td>
-				<td>
-					<b>POLS 112 (700) TETF, MPH, NLH 1,2,3, & 4 </b>Dr. Isa Saidu, Dr.
-						Jacob Audu , Mal. Abdul Ahmadu, Malama Fatima Mahmud, Mal.
-						Danladi Aliyu, Mal. Kabiru Rufa’I, Dr. Akin Lijoka, Mal. Lateef
-						Lawal, Usman Muideen, Sani Musa, Ibrahim Khames, Abiola
-						Corper, Kamal Corper
-				</td>
-				<td></td>
-			</tr>
-			<tr>
-				<td>
-					<span>Wednesday</span>
-				<span>03/11/2021</span>
-				</td>
-				<td></td>
-				<td>
-					<b>
-						POLS 108 (150) LT1</b> *Malama Rabiat Momodu, Malama Halima
-Adamu, 
-				
+					POLS 215 NLH 3
 				</td>
 				
+			</tr>
+			
+			<tr>
+				<td>
+					Actions
+				</td>
+                <td colspan="2" style="text-align: end;">
+
+					<button>print</button>
+				</td>
 			</tr>
 		</tbody>
 	</table>
-
-	<!-- <table>
-		<tr>
-			<td>Date</td>
-			
-			<td>Courses</td>
-			<td>Venue</td>
-			<td>Time</td>
-		</tr>
-		<tr>
-			<td>21/10/2021 <br> Thursday</td>
-			
-			<td>Pols104</td>
-			<td>nlh1 & 2</td>
-			<td>2:30 - 5:30 pm</td>
-		</tr>
-		<tr>
-			<td>22/10/2021 <br> Friday</td>
-			<td>pols102</td>
-			<td>tetf</td>
-			<td>8:30 - 11:30 am</td>
-		</tr>
-		<tr>
-			<td>23/10/2021 <br> Saturday</td>
-			<td>geog106</td>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<td>26/10/2021 <br> Monday</td>
-			<td>pols110</td>
-			<td>nlh 1,2 & 3</td>
-			<td>2:30 - 5:30 pm</td>
-		</tr>
-		<tr>
-		<td>1/11/2021 <br> monday</td>
-	
-		<td>pols112</td>
-		<td> tetf <br> mph <br> nlh1,2,3 & 4</td>
-		<td>8:30 - 11:30 am</td>
-	</tr>
-	<tr>
-		<td>03/11/20121 <br>Wednesday</td>
-		<td>pols108</td>
-		<td>lt1</td>
-		<td>2:30 - 5:30 pm</td>
-	</tr>
-	</table> -->
-	<button>print</button>
 	<script>
 		const btn = document.querySelector('button')
 
